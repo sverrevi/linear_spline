@@ -21,13 +21,11 @@ Set up:
 
     * MacOS/Linux: `source venv/bin/activate`
 
-   source venv/bin/activae
-
 4. Install required packages:
 
    pip install -r requirements.txt
 
-You're good to go!
+You"re good to go!
 
 ### Development
 
