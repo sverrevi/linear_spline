@@ -9,21 +9,21 @@ Set up:
 
 1. Install [ venv ](https://docs.python.org/3/library/venv.html):
 
-   pip install --user venv
+   `pip install --user venv`
 
 2. Create virtual environment:
 
-   python -m venv venv
+   `python -m venv venv`
 
 3. Activate virtual environment venv:
 
-    * Windows: `.venv\Scripts\activate.bat`
+    * Windows: `.venv\Scripts\activate.bat` or `.\venv\Scripts\Activate.ps1`
 
     * MacOS/Linux: `source venv/bin/activate`
 
 4. Install required packages:
 
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 You"re good to go!
 

@@ -8,7 +8,7 @@ def main():
     yp = np.sin(xp)
     y_evaluated = interp(x, xp, yp)
     x_vals = [x, xp[-1]]
-    y_vals = [yp[-1], y_evaluated]
+    y_vals = [y_evaluated, yp[-1]]
     plt.subplot(3, 1, 1)
     plt.plot(x, y_evaluated, "x")
     plt.plot(xp, yp, 'k')
@@ -16,7 +16,6 @@ def main():
     plt.xlabel("x")
     plt.ylabel("y")
     plt.title("Case with constant extrapolation (right side) for sin(x)")
- 
 
     x2 = 4
     xp2 = [1, 3, 5]
@@ -34,7 +33,7 @@ def main():
     yp3 = np.exp(xp)
     y3_evaluated = interp(x3, xp3, yp3)
     x_vals3 = [x3, xp3[0]]
-    y_vals3 = [yp3[0], y3_evaluated]
+    y_vals3 = [y3_evaluated, yp3[0]]
     plt.subplot(3, 1, 3)
     plt.plot(x3, y3_evaluated, "x")
     plt.plot(xp3, yp3, "k")
@@ -44,9 +43,7 @@ def main():
     plt.title("Case with constant extrapolation (left side) for exp(x)")
     plt.tight_layout()
     plt.show()
-    
 
 
 if __name__ == "__main__":
     main()
-    

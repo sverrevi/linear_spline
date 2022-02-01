@@ -1,4 +1,4 @@
-from sort_helper import binary_search
+from search_helper import binary_search
 import numpy as np
 
 def interp(x, xp, yp):
@@ -24,5 +24,5 @@ def interp(x, xp, yp):
         return yp[x_index]
     x0, x1 = xp[x_index], xp[x_index+1]
     y0, y1 = yp[x_index], yp[x_index+1]
-    a = (y1-y0)/(x1- x0)
+    a = (y1-y0)/(x1-x0)
     return a*(x-x0) + y0
