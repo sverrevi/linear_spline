@@ -54,4 +54,4 @@ def test_interp():
     yp7 = sin(xp7)
     expected7 = sin(x7)
     computed7 = interp(x7, xp7, yp7)
-    assert abs(expected7 - computed7)
+    assert abs(expected7 - computed7) < tol
